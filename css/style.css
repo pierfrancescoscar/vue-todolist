@@ -8,3 +8,9 @@
     background: #f2f2f2;
     box-shadow: 0 8px 6px -6px black;
 }
+
+/* Completed Task */
+
+.text.completed {
+    text-decoration: line-through;
+}
