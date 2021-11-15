@@ -13,4 +13,12 @@
 
 .text.completed {
     text-decoration: line-through;
+    
+}
+
+/* Delete Task on Click */
+
+.to-do .delete {
+    cursor: pointer;
+    color: red;
 }

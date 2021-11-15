@@ -51,6 +51,10 @@ const app = new Vue ({
                 // Clean after entered new to do
                 this.newToDo = '';
             }
+        },
+
+        removeToDo(index) {
+            this.todos.splice(index, 1);
         }
     }
 });
