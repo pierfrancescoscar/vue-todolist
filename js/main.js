@@ -34,6 +34,12 @@ const app = new Vue ({
                 completed: false,
             },
 
-        ]
+        ],
+        newToDo: '',
+    },
+    methods: {
+        addToDo() {
+            console.log('button press check', this.newToDo);
+        }
     }
 })

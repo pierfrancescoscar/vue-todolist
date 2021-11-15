@@ -25,10 +25,18 @@
     </header>
 
     <!-- Input + Add Button -->
-    <section class="container">
+    <section class="container new-todo">
 
-        <input class="me-4" type="text" placeholder="New ToDo">
-        <button type="button" class="btn btn-primary">Aggiungi</button>
+        <input class="me-4"
+        type="text"
+        placeholder="New To Do"
+        v-model="newToDo">
+
+        <button type="button"
+        class="btn btn-primary"
+        @click="addToDo">
+        Aggiungi
+        </button>
 
     </section>
 
