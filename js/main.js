@@ -40,6 +40,14 @@ const app = new Vue ({
     methods: {
         addToDo() {
             console.log('button press check', this.newToDo);
+            if(this.newToDo !== '') {
+                // Add new "To Do"
+                const newToDo = {
+                    text: this.newToDo,
+                    completed: false,
+                }
+                this.todos.push(newToDo);
+            }
         }
     }
-})
+});
