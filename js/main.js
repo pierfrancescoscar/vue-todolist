@@ -15,3 +15,25 @@
 // 1. Oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista.
 // 2. Cliccando sul testo del todo, invertire il valore della proprietà completed del todo corrispondente (se completed era uguale a false, impostare true e viceversa).
 
+
+// Vue
+const app = new Vue ({
+    el: '#app',
+    data: {
+        todos: [
+            {
+                text: 'Finire esercizio',
+                completed: false,
+            },
+            {
+                text: 'Lavare i piatti',
+                completed: true,
+            },
+            {
+                text: 'Provare a fare i bonus',
+                completed: false,
+            },
+
+        ]
+    }
+})

@@ -15,7 +15,33 @@
     <title>Vue ToDo List</title>
 </head>
 <body>
+    
+<div id="app" class="container text-center">
+    <!-- Header -->
+    <header class="mb-5">
+        <img class="w-25" src="https://www.boolean.careers/images/misc/logo.png" alt="logo">
+    </header>
 
+    <!-- Input + Add Button -->
+    <section class="container">
+        <input class="me-4" type="text" placeholder="New ToDo">
+        <button type="button" class="btn btn-primary">Aggiungi</button>
+    </section>
+
+    <main class="todo-container">
+        <ul class="todos-list mt-5 p-3">
+            <li class="to-do list-unstyled">
+                <span class="text">Task goes here</span>
+                <i class="fas fa-trash"></i>
+            </li>
+            <li class="to-do-completed list-unstyled">
+                <span class="text">Task goes here</span>
+                <i class="fas fa-trash"></i>
+            </li>
+        </ul>
+    </main>
+
+</div>
     <!-- JS -->
     <script src="./js/main.js"></script>
 </body>
