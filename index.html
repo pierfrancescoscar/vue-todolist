@@ -31,7 +31,8 @@
         type="text"
         placeholder="New To Do"
         v-model.trim="newToDo"
-        ref="reference">
+        ref="reference"
+        @keyup.enter="addToDo">
 
         <button type="button"
         class="btn btn-primary"
