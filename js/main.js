@@ -47,6 +47,9 @@ const app = new Vue ({
                     completed: false,
                 }
                 this.todos.push(newToDo);
+
+                // Clean after entered new to do
+                this.newToDo = '';
             }
         }
     }
