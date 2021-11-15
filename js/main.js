@@ -50,6 +50,9 @@ const app = new Vue ({
 
                 // Clean after entered new to do
                 this.newToDo = '';
+
+                // Set focus on input after entered new to do 
+                this.$refs.reference.focus();
             }
         },
 
@@ -58,3 +61,4 @@ const app = new Vue ({
         }
     }
 });
+
