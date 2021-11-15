@@ -41,10 +41,10 @@
         </button>
 
     </section>
-
+    <!-- To Do List -->
     <main class="todo-container">
 
-        <ul class="todos-list mt-5 p-3">
+        <ul class="todos-list rounded mt-5 p-3" v-if="todos.length > 0">
 
             <li class="to-do list-unstyled"
             v-for="(todo, index) in todos"
@@ -60,6 +60,7 @@
             </li>
 
         </ul>
+        <h2 class="mt-4" v-else>There are no "to do" here. You can relax yourself!</h2>
     </main>
 
 </div>
