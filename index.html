@@ -20,12 +20,12 @@
     <!-- Header -->
     <header class="mb-5">
 
-        <img class="w-25" src="https://www.boolean.careers/images/misc/logo.png" alt="logo">
+        <img class="w-50" src="./img/scarincip_logo_todolist_Tavola disegno 1.png" alt="logo">
 
     </header>
 
     <!-- Input + Add Button -->
-    <section class="container new-todo">
+    <section class="new-todo">
 
         <input class="me-4"
         type="text"
@@ -35,7 +35,7 @@
         @keyup.enter="addToDo">
 
         <button type="button"
-        class="btn btn-primary"
+        class="customButton rounded"
         @click="addToDo">
         Aggiungi
         </button>
@@ -46,7 +46,7 @@
 
         <ul class="todos-list rounded mt-5 p-3" v-if="todos.length > 0">
 
-            <li class="to-do list-unstyled"
+            <li class="to-do list-unstyled d-flex flex-grow-1 justify-content-between align-items-center"
             v-for="(todo, index) in todos"
             >
                 <span class="text"

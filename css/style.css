@@ -3,10 +3,52 @@
     font-family: 'Karla', sans-serif;
 }
 
+body {
+    background-image: url('../img/desk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Input + Button Section */
+.new-todo {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.new-todo input {
+    width: 650px;    
+}
+
+.customButton {
+    background-color: #593E25;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
 /* To Do List */
+.todo-container {
+    max-width: 700px;
+    text-align: left;
+    margin: 0 auto;
+}
 .todos-list {
-    background: #f2f2f2;
+    max-width: 700px;
+    background: #FFFF99;
     box-shadow: 0 8px 6px -6px black;
+}
+
+.to-do {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.to-do:last-child {
+    border: none;
 }
 
 /* Completed Task */
@@ -26,6 +68,6 @@
 
 .to-do .delete {
     cursor: pointer;
-    color: red;
+    color: #593E25;
 }
 
