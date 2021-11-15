@@ -51,6 +51,7 @@
             >
                 <span class="text"
                 :class="{completed: todo.completed}"
+                @click="updateStatus(index)"
                 >
                 {{ todo.text }}
                 </span>
